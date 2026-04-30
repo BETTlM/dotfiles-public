@@ -41,6 +41,8 @@ function GithubIcon() {
 
 export default async function AdminPage() {
   const session = await getServerSession(authOptions);
+  const hasGitHubOAuth =
+    Boolean(process.env.GITHUB_CLIENT_ID) && Boolean(process.env.GITHUB_CLIENT_SECRET);
   if (!isAdminSession(session)) {
     return (
       <main className="container">
@@ -54,10 +56,20 @@ export default async function AdminPage() {
             <code style={{ marginLeft: 4, marginRight: 4 }}>@{ADMIN_GITHUB_LOGIN}</code>
             is allowed in.
           </p>
-          <Link href="/api/auth/signin/github" className="btn btnPrimary" style={{ width: "100%", justifyContent: "center" }}>
-            <GithubIcon />
-            Log in with GitHub
-          </Link>
+          {hasGitHubOAuth ? (
+            <Link
+              href="/api/auth/signin/github"
+              className="btn btnPrimary"
+              style={{ width: "100%", justifyContent: "center" }}
+            >
+              <GithubIcon />
+              Log in with GitHub
+            </Link>
+          ) : (
+            <div className="lockChip" style={{ width: "100%", justifyContent: "center" }}>
+              GitHub OAuth env vars missing on server
+            </div>
+          )}
           <div className="lockChip">
             <LockIcon />
             Allowlist locked: {ADMIN_GITHUB_LOGIN}
