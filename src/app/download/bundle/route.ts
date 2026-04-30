@@ -1,6 +1,5 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import { Readable } from "node:stream";
 import { gzipSync } from "node:zlib";
 
 import tar from "tar-stream";
@@ -96,9 +95,8 @@ export async function GET() {
   pack.finalize();
 
   const tarChunks: Buffer[] = [];
-  const stream = Readable.from(pack);
-  for await (const chunk of stream) {
-    tarChunks.push(chunk as Buffer);
+  for await (const chunk of pack) {
+    tarChunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
   }
   const tarBuffer = Buffer.concat(tarChunks);
   const gzipBuffer = gzipSync(tarBuffer);
