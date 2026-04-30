@@ -1,0 +1,18 @@
+{
+  "cssTheme": "Cupertino",
+  "accentColor": "#6c84f9",
+  "theme": "obsidian",
+  "interfaceFontFamily": "Proxima Nova",
+  "baseFontSize": 18,
+  "textFontFamily": "Proxima Nova",
+  "monospaceFontFamily": "Fira Code",
+  "baseFontSizeAction": true,
+  "showViewHeader": true,
+  "showRibbon": false,
+  "translucency": true,
+  "enabledCssSnippets": [
+    "course-tiles",
+    "colums",
+    "fading-footer-image"
+  ]
+}

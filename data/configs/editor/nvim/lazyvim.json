@@ -1,0 +1,12 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.coding.yanky",
+    "lazyvim.plugins.extras.editor.mini-move"
+  ],
+  "install_version": 8,
+  "news": {
+    "NEWS.md": "10960",
+    "doc/news.txt": "25653"
+  },
+  "version": 8
+}

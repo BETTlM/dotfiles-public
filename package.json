@@ -6,17 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "import:configs": "node scripts/import-configs.mjs"
   },
   "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "@vercel/analytics": "^2.0.1",
+    "lucide-react": "^1.14.0",
     "next": "16.2.4",
+    "next-auth": "^4.24.14",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-syntax-highlighter": "^16.1.1",
+    "tar-stream": "^3.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@types/tar-stream": "^3.1.4",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "typescript": "^5"

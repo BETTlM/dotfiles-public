@@ -1,0 +1,15 @@
+{
+  "cssTheme": "Cupertino",
+  "accentColor": "",
+  "theme": "obsidian",
+  "interfaceFontFamily": "Proxima Nova",
+  "baseFontSize": 19,
+  "textFontFamily": "Proxima Nova",
+  "monospaceFontFamily": "Fira Code",
+  "baseFontSizeAction": true,
+  "showViewHeader": true,
+  "showRibbon": false,
+  "translucency": true,
+  "enabledCssSnippets": [],
+  "nativeMenus": true
+}

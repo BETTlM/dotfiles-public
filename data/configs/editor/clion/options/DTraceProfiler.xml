@@ -1,0 +1,7 @@
+<application>
+  <component name="DTraceProfilerSettings" executablePath="/usr/sbin/dtrace">
+    <option name="defaultCmdArgs">
+      <option value="-q" />
+    </option>
+  </component>
+</application>

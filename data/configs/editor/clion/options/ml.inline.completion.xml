@@ -1,0 +1,10 @@
+<application>
+  <component name="MLCompletionState">
+    <option name="multiLineAllowed" value="false" />
+    <option name="inlineHintState">
+      <InplaceEditorHintState>
+        <option name="shouldRender" value="false" />
+      </InplaceEditorHintState>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,152 @@
+<application>
+  <component name="RunnerLayoutSettings">
+    <runner id="Session">
+      <ViewImpl>
+        <option name="ID" value="Input" />
+        <option name="placeInGrid" value="center" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#122ada9b@1.1.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="1" />
+        <option name="window" value="1" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#637417a9@3.1.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="2" />
+        <option name="window" value="1" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#6b7e6102@4.1.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="1" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#7c161fff@1.1.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="3" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#55c6040b@6.2.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="4" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#487e5fda@2.1.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="5" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#1fdab14f@1.1.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="1" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#12ad7fe2@22.16.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="6" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#4f71c3f7@22.17.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="7" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#57194106@22.18.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="8" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#c8cc5dd@22.19.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="9" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#3173fe7e@22.20.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="10" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#5552cea3@22.21.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="11" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#36a54f61@22.22.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="12" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#95296e8@22.23.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="13" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ResultTab#70dfc7c7@22.24.1" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="14" />
+      </ViewImpl>
+      <TabImpl />
+      <TabImpl>
+        <option name="defaultIndex" value="6" />
+        <option name="index" value="1" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="2" />
+        <option name="index" value="2" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="3" />
+        <option name="index" value="3" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="4" />
+        <option name="index" value="4" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="5" />
+        <option name="index" value="5" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="6" />
+        <option name="index" value="6" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="7" />
+        <option name="index" value="7" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="8" />
+        <option name="index" value="8" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="9" />
+        <option name="index" value="9" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="10" />
+        <option name="index" value="10" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="11" />
+        <option name="index" value="11" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="12" />
+        <option name="index" value="12" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="13" />
+        <option name="index" value="13" />
+      </TabImpl>
+      <TabImpl>
+        <option name="defaultIndex" value="14" />
+        <option name="index" value="14" />
+      </TabImpl>
+      <General>
+        <option name="isTabLabelsHidden" value="false" />
+      </General>
+    </runner>
+  </component>
+</application>

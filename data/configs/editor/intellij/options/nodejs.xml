@@ -1,0 +1,7 @@
+<application>
+  <component name="NodeJsLocalInterpreterManager">
+    <local-interpreter path="/opt/homebrew/bin/node">
+      <version-cache version="25.8.0" last-modified="1772651577743" />
+    </local-interpreter>
+  </component>
+</application>

@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💸 Semester 4 DashBoard.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "💸 Semester 4 DashBoard"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "72e1e4eaa64635ef",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "45f3a6768ddeb91c",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "4f5e64e60f4b4f41",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "b508972a2095c755",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "8797e8201c0e8c43",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "f344bad0e54cb86b",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f8026e30bcd1858d",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Projects/Unified NFC/Initial Draft.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "0f0afae05eae50a0",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "💸 Semester 4 DashBoard.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "972120bdcc5fc176",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "💸 Semester 4 DashBoard.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false,
+      "dashboard-navigator:Open dashboard navigator": false,
+      "obsidian-git:Open Git source control": false,
+      "homepage:Open homepage": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "Projects/Unified NFC/Initial Draft.md",
+    "💸 Semester 4 DashBoard.md",
+    "Projects/Unified NFC",
+    "Assets/Probability and Random Processes/Introduction - November 14.pdf",
+    "Courses/Probability and Random Processes/Probability and Random Processes.md",
+    "DIary/2025-11-12.md",
+    "Courses/Design and Analysis of Algorithms/Design and Analysis of Algorithms.md",
+    "Courses/Design and Analysis of Algorithms/Divide And Conquer; N ball problem - November 12.md",
+    "Assets/Design and Analysis of Algorithms",
+    "DIary",
+    "Assets/Operating Systems",
+    "Assets/Probability and Random Processes",
+    "TimeTable.xlsx",
+    "Assets/Principles of Functional Languages",
+    "/💸 Semester 4 DashBoard.md",
+    "/TimeTable.xlsx",
+    "/DIary/2025-11-12.md",
+    "/Courses/Design and Analysis of Algorithms/Divide And Conquer; N ball problem - November 12.md",
+    "/Courses/Design and Analysis of Algorithms/Design and Analysis of Algorithms.md",
+    "/Courses/Design and Analysis of Algorithms",
+    "Courses/Computer Organization and Architecture/Computer Organization and Architecture.md",
+    "Projects/Bettim's Donna/OUTLINE.md",
+    "/Projects/Bettim's Donna/OUTLINE.md",
+    "Assets/footer.jpg",
+    "Courses/Operating Systems/Operating Systems.md",
+    "/Courses/Probability and Random Processes/Probability and Random Processes.md",
+    "/Courses/Principles of Functional Languages/Principles of Functional Languages.md",
+    "/Courses/Computer Organization and Architecture/Computer Organization and Architecture.md"
+  ]
+}

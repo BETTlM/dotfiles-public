@@ -1,0 +1,239 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💸 Semester 4 DashBoard.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "💸 Semester 4 DashBoard"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "613180f6b1503d4a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0c51cc7c7e1419c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1b46e7ba382c5b5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ff0c396af7584410",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#course",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1bdf348b899de099",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.5
+  },
+  "right": {
+    "id": "8ab5a41d234f01e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "403492fb81474e91",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec8e16378fe0a791",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "2b785fe4323083a9",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "4fd5bd2342d475d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "4e0ba5e751ea1b1f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5e027ae31e7b4f2f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "💸 Semester 4 DashBoard.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 💸 Semester 4 DashBoard"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": true,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "bases:Create new base": true,
+      "markdown-importer:Open format converter": true,
+      "dashboard-navigator:Open dashboard navigator": false,
+      "obsidian-git:Open Git source control": false,
+      "homepage:Open homepage": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "markitdown:Convert to Markdown with Markitdown": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "💸 Semester 4 DashBoard.md",
+    "Courses/Probability and Random Processes/End Semester Exam Full Portions.md",
+    "Courses/Probability and Random Processes/Probability and Random Processes.md",
+    "Courses/Computer Organization and Architecture/End Semester Lock In.md",
+    "Courses/Computer Organization and Architecture/Computer Organization and Architecture.md",
+    "ARM Edition - Patterson TB.pdf.md",
+    "Assets/Computer Organization and Architecture/~$1 - Course Introduction.pptx",
+    "Assets/Computer Organization and Architecture/Building CA - November 18.pdf",
+    "Assets/Computer Organization and Architecture/Logical Operands - December 1.pdf",
+    "Assets/Computer Organization and Architecture/Pasted image 20260326152459.png",
+    "Assets/Computer Organization and Architecture/Leaf Procedure - December 23.pdf",
+    "Assets/Computer Organization and Architecture/Export Operands - November 27.pdf",
+    "Assets/Computer Organization and Architecture/Conditional Statements - December 9.pdf",
+    "Assets/footer.jpg",
+    "Assets/Computer Organization and Architecture/Pasted image 20260326152637.png",
+    "Assets/Computer Organization and Architecture/Pasted image 20260326152359.png",
+    "Assets/Computer Organization and Architecture/Pasted image 20260326224652.png",
+    "Assets/Computer Organization and Architecture/Pasted image 20260326215142.png",
+    "Assets/Computer Organization and Architecture/Pasted image 20260326215126.png",
+    "Assets/Computer Organization and Architecture/Pasted image 20260326163838.png",
+    "Assets/Computer Organization and Architecture/Pasted image 20260326152545.png",
+    "Courses/Computer Organization and Architecture/Nested Procedures - December 24.md",
+    "Courses/Operating Systems/Lab Evaluation 2 - March 5.md",
+    "Courses/Design and Analysis of Algorithms/Final Revision.md",
+    "MANNICHIDUU OOTUKARIII.md",
+    "Courses/Design and Analysis of Algorithms/Design and Analysis of Algorithms.md",
+    "Diary/2026-03-13.md",
+    "Courses/Operating Systems/Operating Systems.md",
+    "Courses/Probability and Random Processes/Mid Semester Exam - Outline.md",
+    "Assets/Probability and Random Processes/Moment Generating Functions - December 9.pdf",
+    "Diary/2025-12-23.md",
+    "Assets/Probability and Random Processes/Poission and Geometric PD - December 23.pdf",
+    "Diary/2025-12-11.md",
+    "Assets/Design and Analysis of Algorithms/Bridges - December 11.pdf",
+    "Diary/2025-12-10.md",
+    "Assets/Design and Analysis of Algorithms/Strongly Connected Components - December 10.pdf",
+    "Courses/Design and Analysis of Algorithms/Lab Session 3 - December 3.md",
+    "Courses/Principles of Functional Languages/Functions in Haskell - November 25.md",
+    "Courses/Design and Analysis of Algorithms/Divide And Conquer; N ball problem - November 12.md",
+    "Diary/2025-12-05.md",
+    "Diary/2025-12-04.md",
+    "2025-12-05.md",
+    "Courses/Principles of Functional Languages/Principles of Functional Languages.md",
+    "2025-12-04.md",
+    "Diary/2025-12-02.md",
+    "Pasted image 20251104143509.png"
+  ]
+}

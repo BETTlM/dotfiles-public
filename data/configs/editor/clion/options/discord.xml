@@ -1,0 +1,34 @@
+<application>
+  <component name="DiscordApplicationSettings">
+    <option name="show" value="true" />
+    <option name="timeoutMinutes" value="20" />
+    <option name="idle" value="IGNORE" />
+    <option name="applicationDetailsCustom" value="" />
+    <option name="applicationStateCustom" value="" />
+    <option name="applicationIconLargeCustom" value="" />
+    <option name="applicationIconLargeTextCustom" value="" />
+    <option name="applicationIconSmallCustom" value="" />
+    <option name="applicationIconSmallTextCustom" value="" />
+    <option name="applicationTime" value="APPLICATION" />
+    <option name="projectDetailsCustom" value="" />
+    <option name="projectStateCustom" value="" />
+    <option name="projectIconLargeCustom" value="" />
+    <option name="projectIconLargeTextCustom" value="" />
+    <option name="projectIconSmallCustom" value="" />
+    <option name="projectIconSmallTextCustom" value="" />
+    <option name="projectTime" value="APPLICATION" />
+    <option name="fileDetailsCustom" value="" />
+    <option name="fileStateCustom" value="" />
+    <option name="fileIconLargeCustom" value="" />
+    <option name="fileIconLargeTextCustom" value="" />
+    <option name="fileIconSmallCustom" value="" />
+    <option name="fileIconSmallTextCustom" value="" />
+    <option name="fileTime" value="APPLICATION" />
+    <option name="filePrefixEnabled" value="true" />
+    <option name="fileHideVcsIgnored" value="false" />
+    <option name="applicationType" value="IDE_EDITION" />
+    <option name="applicationTheme" value="macos" />
+    <option name="iconsTheme" value="atom" />
+    <option name="applicationLastUpdateNotification" value="" />
+  </component>
+</application>

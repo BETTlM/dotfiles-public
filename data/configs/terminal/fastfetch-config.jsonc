@@ -1,0 +1,149 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+"logo": {
+    	"type": "raw",
+    	"padding": {
+    		"top": 5,
+            "left": 5,
+            "right": 5
+    	}
+  },
+  "display": {
+      "separator": " ➜  "
+  },
+  "modules": [
+      {
+          "type": "host",
+          "key": "PC   ",
+          "keyColor": "yellow"
+      },
+      {
+          "type": "cpu",
+          "showPeCoreCount": true,
+          "temp": true,
+          "key": " ├  ",
+          "keyColor": "yellow"
+      },
+      {
+          "type": "gpu",
+          "driverSpecific": true,
+          "temp": true,
+          "key": " ├ 󰢮 ",
+          "keyColor": "yellow"
+      },
+      {
+          "type": "display",
+          "key": " └  ",
+          "keyColor": "yellow"
+      },
+      "break",
+      {
+          "type": "memory",
+          "key": " ├  ",
+          "keyColor": "yellow"
+      },
+      {
+        "type": "battery",
+        "key": " ├ % ",
+        "keyColor": "yellow"
+    },
+      {
+          "type": "disk",
+          "key": " └ 󰋊 ",
+          "keyColor": "yellow"
+      },
+      "break",
+      {
+          "type": "os",
+          "key": "OS   ",
+          "keyColor": "red"
+      },
+      {
+          "type": "kernel",
+          "key": " ├  ",
+          "keyColor": "red"
+      },
+      {
+          "type": "shell",
+          "key": " ├  ",
+          "keyColor": "red"
+      },
+      {
+          "type": "editor",
+          "key": " ├  ",
+          "keyColor": "red"
+      },
+      {
+          "type": "packages",
+          "key": " └ 󰏖 ",
+          "keyColor": "red"
+      },
+      "break",
+      {
+          "type": "de",
+          "key": "DE   ",
+          "keyColor": "green"
+      },
+      {
+          "type": "wm",
+          "key": " ├  ",
+          "keyColor": "green"
+      },
+      {
+          "type": "wmtheme",
+          "key": " ├ 󰉼 ",
+          "keyColor": "green"
+      },
+      {
+          "type": "opengl",
+          "key": " ├ 󰇞 ",
+          "keyColor": "green"
+      },
+      {
+          "type": "terminal",
+          "key": " ├  ",
+          "keyColor": "green"
+      },
+      {
+          "type": "terminalfont",
+          "key": " ├  ",
+          "keyColor": "green"
+      },
+      {
+          "type": "locale",
+          "key": " └  ",
+          "keyColor": "green"
+      },
+      "break",
+    {
+        "type": "command",
+        "key": "NET  ",
+        "keyColor": "blue",
+        "text": "ipconfig getsummary $(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline; print $2}') | awk -F ' SSID : ' '/ SSID : / {print $2}'"
+    }
+      ,
+      
+      {
+          "type": "localip",
+          "key": " ├ 󰛳 ",
+          "keyColor": "blue"
+      },
+      {
+          "type": "dns",
+          "key": " ├ 󰇖 ",
+          "keyColor": "blue"
+      },
+    //   {
+    //     "type": "publicip",
+    //     "key": " ├ 󰇖 ",
+    //     "keyColor": "blue"
+    // },
+      "break",
+      
+      {
+          "type": "uptime",
+          "key": "Uptime ",
+          "keyColor": "magenta"
+      }
+  ]
+}

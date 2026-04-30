@@ -1,0 +1,34 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="DiscordProjectSettings">
+        <option name="show" value="ASK" />
+        <option name="description" value="" />
+        <option name="applicationTheme" value="default" />
+        <option name="iconsTheme" value="default" />
+        <option name="button1Title" value="" />
+        <option name="button1Url" value="" />
+        <option name="button2Title" value="" />
+        <option name="button2Url" value="" />
+        <option name="customApplicationId" value="" />
+      </component>
+      <component name="ProjectViewState">
+        <option name="hideEmptyMiddlePackages" value="true" />
+        <option name="showExcludedFiles" value="false" />
+        <option name="showLibraryContents" value="true" />
+        <option name="showScratchesAndConsoles" value="false" />
+      </component>
+      <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;
+  }
+}</component>
+      <component name="WindowStateProjectService">
+        <state x="244" y="136" key="SettingsEditor" timestamp="1749699652625">
+          <screen x="0" y="38" width="1470" height="918" />
+        </state>
+        <state x="244" y="136" key="SettingsEditor/0.38.1470.918" timestamp="1749699652625" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

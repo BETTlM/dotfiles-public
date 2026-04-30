@@ -1,0 +1,127 @@
+<application>
+  <component name="ActionHistoryManager">
+    <ids>
+      <option value="ActivatePlantUMLToolWindow" />
+    </ids>
+  </component>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="JdkInstallerHistory">
+    <option name="installedItems">
+      <installed-jdk>
+        <option name="fullText" value="Oracle OpenJDK 25.0.1 (aarch64)" />
+        <option name="installDir" value="{{HOME}}/Library/Java/JavaVirtualMachines/openjdk-25.0.1" />
+        <option name="sha256" value="9175d602f3be2ffa241eb01d24ba4541e29a4dfa2095d4bdc1c9eb4bf4d56705" />
+        <option name="url" value="https://download.java.net/java/GA/jdk25.0.1/2fbf10d8c78e40bd87641c434705079d/8/GPL/openjdk-25.0.1_macos-aarch64_bin.tar.gz" />
+        <option name="versionText" value="25.0.1" />
+      </installed-jdk>
+    </option>
+  </component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="13.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "AFTER.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT": "0",
+    "AFTER.DISTRACTION.MODE.HIDE_TOOL_STRIPES": "true",
+    "AFTER.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN_ONLY_ON_HOVER": "false",
+    "AFTER.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.IS_WHITESPACES_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_BREADCRUMBS": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_NAVIGATION_BAR": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_NEW_MAIN_TOOLBAR": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_STATUS_BAR": "false",
+    "AIHubNotificationManager.lastUsedLicenseType": "FREE",
+    "BEFORE.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT": "1",
+    "BEFORE.DISTRACTION.MODE.HIDE_TOOL_STRIPES": "false",
+    "BEFORE.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN_ONLY_ON_HOVER": "true",
+    "BEFORE.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.IS_WHITESPACES_SHOWN": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_BREADCRUMBS": "true",
+    "BEFORE.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_NAVIGATION_BAR": "true",
+    "BEFORE.DISTRACTION.MODE.SHOW_NEW_MAIN_TOOLBAR": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_STATUS_BAR": "true",
+    "ColorChooser.RecentColors": "246-0-0-255",
+    "DISTRACTION.MODE.ENTER.VALUE": "false",
+    "InstalledPluginsSearchHistory": "c\nautocomplete\ngutt",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "5",
+    "LiveContextsPanel[0]": "0.13986014",
+    "MarketplacePluginsSearchHistory": "glass\nthe\ntransp\ntrans",
+    "NewProjectWizard.generateOnboardingTips": "true",
+    "NextRunPlatformUpdateBuild": "IU-251.29188.11",
+    "NextRunPlatformUpdateSelfBuild": "IU-251.26927.53",
+    "NextRunPlatformUpdateVersion": "2025.1.7",
+    "RunOnceActivity.TerminalOptionsProvider.migration.2025.1.1": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
+    "RunOnceActivity.git.modal.commit.toggle": "true",
+    "SettingsSearchHistory": "margin\ngutter\ncompletion\nautocomplete\nright",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor": "Sources",
+    "database.notebook.setting.id": "c68215c4-3f08-455a-9a0a-a839f43c64a5",
+    "defaultJdkConfigured": "true",
+    "enter_selection_count": "4",
+    "evlsprt3.251": "5",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "251.26927.53",
+    "fileTypeChangedCounter": "3",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "got.it.tooltip.Plugins Auto-Update": "1",
+    "got.it.tooltip.database.schema.control.got.it": "1",
+    "got.it.tooltip.speed.search.shown": "1",
+    "ift.hide.welcome.screen.promo": "true",
+    "installed.kotlin.plugin.version": "251.26927.53-IJ",
+    "jdk.selected.JAVA_MODULE": "21",
+    "junie.openOnceAfterInstall": "true",
+    "last_opened_file_path": "{{HOME}}/Documents",
+    "llm.installer.auto.activation.executed": "true",
+    "llm.installer.last.toolwindow.state": "AI_ASSISTANT",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "onboarding.generation.number": "15",
+    "previousColorScheme": "_@user_Dark",
+    "project.wizard.group": "NPW.simple-project.Java",
+    "registry.to.advanced.settings.migration.build": "IU-251.26927.53",
+    "settings.code.style.selected.tab.JAVA": "Wrapping and Braces",
+    "settings.code.style.selected.tab.TypeScript": "Wrapping and Braces",
+    "tab_selection_count": "1",
+    "terminal.gen.one.option.visible": "false",
+    "ts.lib.d.ts.version": "5.7.3"
+  },
+  "keyToStringList": {
+    "AIHubNotificationManager.lastAllNotifications": [],
+    "AIHubNotificationManager.notifications": [
+      "FREE_ENABLED"
+    ],
+    "AIHubNotificationManager.seenNotifications": [],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.profiler.ultimate.hprof.impl.HprofFileTypeDetector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

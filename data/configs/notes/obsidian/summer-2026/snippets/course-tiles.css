@@ -1,0 +1,27 @@
+.course-cards .dataview-ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust 250px to your liking */
+        gap: 1rem;
+        padding-left: 0; /* Remove default list padding */
+    }
+    
+    .course-cards .dataview-ul > li {
+        list-style-type: none; /* Remove bullet points */
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        background-color: var(--background-secondary);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .course-cards .dataview-ul > li:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    
+    .course-cards .dataview-ul > li a {
+        text-decoration: none; /* Remove underline from links */
+        font-weight: 600; /* Make title bolder */
+        font-size: 1.1em;
+        display: block;
+        padding: 1.25rem; /* This makes the whole card feel clickable */
+    }

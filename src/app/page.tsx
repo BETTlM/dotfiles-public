@@ -1,66 +1,66 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
-export default function Home() {
+import { Catalog } from "@/components/Catalog";
+import { readManifest } from "@/lib/manifest";
+
+export default async function Home() {
+  const manifest = await readManifest();
+  const totalFiles = manifest.entries.length;
+  const totalCategories = new Set(manifest.entries.map((entry) => entry.category)).size;
+  const totalTags = new Set(manifest.entries.flatMap((entry) => entry.tags)).size;
+
+  const lastUpdated = manifest.entries
+    .map((entry) => new Date(entry.updatedAt))
+    .sort((a, b) => b.getTime() - a.getTime())[0];
+  const lastUpdatedLabel = lastUpdated
+    ? new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric" }).format(lastUpdated)
+    : "N/A";
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="container">
+      <section className="hero">
+        <span className="heroBadge">
+          <span className="dot" />
+          Live build, sanitized, aura maxed
+        </span>
+        <h1 className="heroTitle">
+          My <span className="gradient">config stash</span> is omega locked in and absolutely goated.
+        </h1>
+        <p className="heroSubtitle">
+          Dotfiles, editor settings, and shell tweaks all live here. Grab one file or nuke-download
+          the whole bundle so your fresh machine does not spawn cringe and aura-negative.
+        </p>
+        <div className="heroActions">
+          <Link href="/download/bundle" className="btn btnPrimary">
+            Download full bundle, no cap
+          </Link>
+          <Link href="#catalog" className="btn btnSecondary">
+            Open the stash
+          </Link>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="heroStats">
+          <div className="statCell">
+            <span className="statValue">{totalFiles}</span>
+            <span className="statLabel">Configs</span>
+          </div>
+          <div className="statCell">
+            <span className="statValue">{totalCategories}</span>
+            <span className="statLabel">Categories</span>
+          </div>
+          <div className="statCell">
+            <span className="statValue">{totalTags}</span>
+            <span className="statLabel">Tags</span>
+          </div>
+          <div className="statCell">
+            <span className="statValue">{lastUpdatedLabel}</span>
+            <span className="statLabel">Last updated</span>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <div id="catalog">
+        <Catalog entries={manifest.entries} />
+      </div>
+    </main>
   );
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileZilla3 version="3.69.5" platform="mac">
+	<RecentServers>
+		<Server>
+			<Host>ftp.amritanet.edu</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>cb.sc.u4cse24544</User>
+			<Pass encoding="base64">[REDACTED]</Pass>
+			<Logontype>1</Logontype>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+		</Server>
+		<Server>
+			<Host>35.200.130.138</Host>
+			<Port>2022</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>{{USERNAME}}.61ac0a03</User>
+			<Pass encoding="base64">[REDACTED]</Pass>
+			<Logontype>1</Logontype>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+		</Server>
+		<Server>
+			<Host>35.200.130.138</Host>
+			<Port>2022</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<Logontype>0</Logontype>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+		</Server>
+		<Server>
+			<Host>35.200.157.148</Host>
+			<Port>2022</Port>
+			<Protocol>1</Protocol>
+			<Type>0</Type>
+			<User>{{USERNAME}}.61ac0a03</User>
+			<Pass encoding="base64">[REDACTED]</Pass>
+			<Logontype>1</Logontype>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+		</Server>
+		<Server>
+			<Host>35.200.157.148</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>sanjith4aris</User>
+			<Pass encoding="base64">[REDACTED]</Pass>
+			<Logontype>1</Logontype>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+		</Server>
+	</RecentServers>
+</FileZilla3>

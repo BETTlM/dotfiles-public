@@ -1,0 +1,14 @@
+{
+  "showVaultName": true,
+  "showCurrentFileName": true,
+  "showFolderName": true,
+  "showConnectionTimer": false,
+  "showPopups": true,
+  "customVaultName": "",
+  "showFileExtension": true,
+  "useLoadedTime": true,
+  "connectOnStart": true,
+  "autoHideStatusBar": true,
+  "privacyMode": false,
+  "themeStyle": "default-new-dark"
+}

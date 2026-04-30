@@ -1,0 +1,120 @@
+<application>
+  <component name="CppNewDialogSettings">
+    <option name="addNewFilesToProject" value="false" />
+  </component>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="ObjectiveC" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="13.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "AFTER.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT": "0",
+    "AFTER.DISTRACTION.MODE.HIDE_TOOL_STRIPES": "true",
+    "AFTER.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN_ONLY_ON_HOVER": "false",
+    "AFTER.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.IS_WHITESPACES_SHOWN": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_BREADCRUMBS": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_NAVIGATION_BAR": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_NEW_MAIN_TOOLBAR": "false",
+    "AFTER.DISTRACTION.MODE.SHOW_STATUS_BAR": "false",
+    "BEFORE.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT": "1",
+    "BEFORE.DISTRACTION.MODE.HIDE_TOOL_STRIPES": "false",
+    "BEFORE.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN_ONLY_ON_HOVER": "true",
+    "BEFORE.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.IS_WHITESPACES_SHOWN": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_BREADCRUMBS": "true",
+    "BEFORE.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_NAVIGATION_BAR": "true",
+    "BEFORE.DISTRACTION.MODE.SHOW_NEW_MAIN_TOOLBAR": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_STATUS_BAR": "true",
+    "DISTRACTION.MODE.ENTER.VALUE": "false",
+    "FileTemplates.SelectedTemplate": "HTML File",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "3",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "CL-251.26094.123",
+    "MarketplacePluginsSearchHistory": "/tag:Theme",
+    "NextRunPlatformUpdateBuild": "CL-251.28774.9",
+    "NextRunPlatformUpdateSelfBuild": "CL-251.26927.39",
+    "NextRunPlatformUpdateVersion": "2025.1.6",
+    "PluginConfigurable.selectionTab": "1",
+    "Rad.Init.Cfg.1": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.TerminalOptionsProvider.migration.2025.1.1": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.cidr.test.framework.showIndexingAsTask": "true",
+    "RunOnceActivity.cidr.test.roots.only": "true",
+    "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
+    "RunOnceActivity.git.modal.commit.toggle": "true",
+    "SettingsSearchHistory": "extensions\nheight\nspacing\nline spa\nseman",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "clion.initialConfigPerformed": "true",
+    "enter_selection_count": "4",
+    "evlsprt3.251": "7",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "251.26927.39",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "got.it.tooltip.Plugins Auto-Update": "1",
+    "got.it.tooltip.settings.sync.in.settings": "1",
+    "gotit.previous.run": "CL-251.26094.123",
+    "ift.hide.welcome.screen.promo": "true",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@user_One Dark Vivid Italic",
+    "registry.to.advanced.settings.migration.build": "CL-251.26927.39",
+    "selected.color.option.type": "rainbow",
+    "settings.code.style.selected.tab.C++": "General",
+    "tab_selection_count": "1",
+    "terminal.gen.one.option.visible": "false",
+    "toolwindow.showToolWindowsNames.ts": "2025-06-12T09:28:33.610049",
+    "ts.lib.d.ts.version": "5.7.3",
+    "whats.new.last.shown.version": "2025-1.2-26094-8741fe7a4dacb444b25eed96728093ccfaadb6bb"
+  },
+  "keyToStringList": {
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.jetbrains.rider.cpp.fileType.CppHeaderFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="ShownTips">{
+  &quot;shownTips&quot;: {
+    &quot;Rename&quot;: 1749896378678,
+    &quot;CtrlW&quot;: 1749812925343,
+    &quot;SpeedSearch&quot;: 1749812959070,
+    &quot;GoToDeclaration&quot;: 1749812956018,
+    &quot;CommentCode&quot;: 1749812953590,
+    &quot;QuickFix&quot;: 1749700407844,
+    &quot;FindReplaceToggle&quot;: 1749896367339,
+    &quot;FindInPath&quot;: 1749812957077
+  },
+  &quot;proposedTips&quot;: {
+    &quot;CtrlW&quot;: 1749812925250,
+    &quot;FindReplaceToggle&quot;: 1749896367246,
+    &quot;QuickFix&quot;: 1749700407753
+  },
+  &quot;tipsOrderSeed&quot;: 1749700407744
+}</component>
+</application>

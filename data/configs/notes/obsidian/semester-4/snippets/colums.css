@@ -1,0 +1,11 @@
+/* Simple two-column layout */
+.columns {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem; /* This is the space between columns */
+}
+
+.column {
+  flex: 1; /* This makes columns share space equally */
+  min-width: 0; /* Prevents content from overflowing */
+}

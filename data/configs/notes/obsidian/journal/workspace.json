@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The End.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "The End"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "613180f6b1503d4a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0c51cc7c7e1419c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1b46e7ba382c5b5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ff0c396af7584410",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1bdf348b899de099",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.5
+  },
+  "right": {
+    "id": "8ab5a41d234f01e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "403492fb81474e91",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02d418f5052757af",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "ec8e16378fe0a791",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "4fd5bd2342d475d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "4e0ba5e751ea1b1f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5e027ae31e7b4f2f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "💸 Semester 4 DashBoard.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 💸 Semester 4 DashBoard"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": true,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "bases:Create new base": true,
+      "markdown-importer:Open format converter": true,
+      "dashboard-navigator:Open dashboard navigator": false,
+      "obsidian-git:Open Git source control": false,
+      "homepage:Open homepage": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "custom-sort:Toggle custom sorting": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "The End.md",
+    "Anbulla Aaruyireh 🫶🏼.md",
+    "Journal Entries/2025-06-16.md",
+    "Journal Entries/2025-09-01.md",
+    "Journal Entries/2025-06-27.md",
+    "Journal Entries/2025-06-26.md",
+    "Journal Entries/2025-06-25.md",
+    "Journal Entries/2025-06-20.md",
+    "Journal Entries/2025-06-18.md",
+    "Journal Entries/2025-06-17.md",
+    "Journal Entries/2025-09-28.md",
+    "I Said, God Help Me 🛐.md",
+    "Pasandida Aurat/Ennaval.md",
+    "Pasandida Aurat/17197578136707836758445468494640.jpg",
+    "You, me and tattoos ✍🏻.md",
+    "Y'all should see my baby before singing about her 🎤.md",
+    "Pasandida Aurat/Pasted image 20250323162937.png",
+    "Pasandida Aurat/Pasted image 20250326103734.png",
+    "Pasandida Aurat/The End.pdf",
+    "Pasandida Aurat/Pasted image 20250314143031.png",
+    "Pasandida Aurat/Pasandida Aurat.md",
+    "Pasandida Aurat/One Last Go.pdf",
+    "Pasandida Aurat/Farewell.md",
+    "Pasandida Aurat/Farewell.pdf",
+    "💸 Semester 4 DashBoard.md",
+    "Courses/Operating Systems/Operating Systems.md",
+    "Courses/Computer Organization and Architecture/Computer Organization and Architecture.md",
+    "Assets/footer.jpg",
+    "Courses/Design and Analysis of Algorithms/Design and Analysis of Algorithms.md",
+    "Courses/Probability and Random Processes/Probability and Random Processes.md",
+    "Courses/Principles of Functional Languages/Principles of Functional Languages.md",
+    "Assets",
+    "temo.md",
+    "🖥️ Semester 4 Dashboard.md",
+    "Pasted image 20251104143509.png",
+    "Courses/Probability and Random Processes",
+    "Courses/Design and Analysis of Algorithms",
+    "Courses/Principles of Functional Languages",
+    "Courses/Computer Organization and Architecture",
+    "Courses/Operating Systems",
+    "Courses"
+  ]
+}

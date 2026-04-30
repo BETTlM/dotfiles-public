@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cfGradient" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8b7cff"/>
+      <stop offset="0.5" stop-color="#ff7ab8"/>
+      <stop offset="1" stop-color="#5cf2c4"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#cfGradient)"/>
+  <text
+    x="32"
+    y="40"
+    text-anchor="middle"
+    font-family="Inter, Geist, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-size="30"
+    font-weight="800"
+    letter-spacing="-1"
+    fill="#06070b"
+  >cf</text>
+</svg>

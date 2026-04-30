@@ -1,0 +1,11 @@
+<application>
+  <component name="AdvancedSettings">
+    <option name="settings">
+      <map>
+        <entry key="clion.use.radler" value="true" />
+        <entry key="confirm.rerun.with.termination" value="false" />
+        <entry key="js.semantic.highlighting.accuracy" value="High" />
+      </map>
+    </option>
+  </component>
+</application>

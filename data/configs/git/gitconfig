@@ -1,0 +1,7 @@
+[credential]
+	helper = osxkeychain
+[user]
+	name = BETTlM
+	email = sanjith120806@gmail.com
+[init]
+	defaultBranch = main
