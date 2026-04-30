@@ -24,18 +24,18 @@ export default async function Home() {
           Live build, sanitized, aura maxed
         </span>
         <h1 className="heroTitle">
-          My <span className="gradient">config stash</span> is omega locked in and absolutely goated.
+          My <span className="gradient">config stash</span> is lowkirkenuinely locked in and absolutely goated.
         </h1>
         <p className="heroSubtitle">
-          Dotfiles, editor settings, and shell tweaks all live here. Grab one file or nuke-download
-          the whole bundle so your fresh machine does not spawn cringe and aura-negative.
+          Dotfiles, editor settings, and shell tweaks all live here. Grab one file or idk just download
+          the whole bundle so your fresh machine does not spawn cringe and aura-negative. I don't know why you would do this, but you can if you want.
         </p>
         <div className="heroActions">
           <Link href="/download/bundle" className="btn btnPrimary">
-            Download full bundle, no cap
+            Download full bundle like a geeked stupid idiot
           </Link>
           <Link href="#catalog" className="btn btnSecondary">
-            Open the stash
+            Open the stash like a locked in sigma
           </Link>
         </div>
         <div className="heroStats">
