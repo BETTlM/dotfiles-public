@@ -41,8 +41,15 @@ function GithubIcon() {
 
 export default async function AdminPage() {
   const session = await getServerSession(authOptions);
+  const githubClientId =
+    process.env.GITHUB_CLIENT_ID ?? process.env.AUTH_GITHUB_ID ?? process.env.GITHUB_ID ?? "";
+  const githubClientSecret =
+    process.env.GITHUB_CLIENT_SECRET ??
+    process.env.AUTH_GITHUB_SECRET ??
+    process.env.GITHUB_SECRET ??
+    "";
   const hasGitHubOAuth =
-    Boolean(process.env.GITHUB_CLIENT_ID) && Boolean(process.env.GITHUB_CLIENT_SECRET);
+    Boolean(githubClientId) && Boolean(githubClientSecret);
   if (!isAdminSession(session)) {
     return (
       <main className="container">

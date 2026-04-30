@@ -3,8 +3,16 @@ import GitHubProvider from "next-auth/providers/github";
 
 import { ADMIN_GITHUB_LOGIN } from "@/lib/authz";
 
+const githubClientId =
+  process.env.GITHUB_CLIENT_ID ?? process.env.AUTH_GITHUB_ID ?? process.env.GITHUB_ID ?? "";
+const githubClientSecret =
+  process.env.GITHUB_CLIENT_SECRET ??
+  process.env.AUTH_GITHUB_SECRET ??
+  process.env.GITHUB_SECRET ??
+  "";
+
 const hasGitHubOAuth =
-  Boolean(process.env.GITHUB_CLIENT_ID) && Boolean(process.env.GITHUB_CLIENT_SECRET);
+  Boolean(githubClientId) && Boolean(githubClientSecret);
 
 export const authOptions: NextAuthOptions = {
   // Avoid production 500s from missing env config.
@@ -12,8 +20,8 @@ export const authOptions: NextAuthOptions = {
   providers: hasGitHubOAuth
     ? [
         GitHubProvider({
-          clientId: process.env.GITHUB_CLIENT_ID!,
-          clientSecret: process.env.GITHUB_CLIENT_SECRET!,
+          clientId: githubClientId,
+          clientSecret: githubClientSecret,
         }),
       ]
     : [],
