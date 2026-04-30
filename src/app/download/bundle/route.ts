@@ -76,6 +76,7 @@ export async function GET() {
     const manifest = await readManifest();
     const pack = tar.pack();
     const baseDir = getConfigsDirectory();
+    const includedEntries: ConfigEntry[] = [];
 
     const pathByEntryId = new Map<string, string>();
     for (const entry of manifest.entries) {
@@ -84,13 +85,24 @@ export async function GET() {
 
     for (const entry of manifest.entries) {
       const absolute = path.join(baseDir, entry.storedPath);
-      const content = await fs.readFile(absolute);
+      let content: Buffer;
+      try {
+        content = await fs.readFile(absolute);
+      } catch (error) {
+        // In restricted deployments, traced assets may omit some files.
+        // Skip missing files instead of failing the entire bundle.
+        if ((error as NodeJS.ErrnoException).code === "ENOENT") {
+          continue;
+        }
+        throw error;
+      }
       const bundlePath = pathByEntryId.get(entry.id) ?? entry.storedPath;
       pack.entry({ name: bundlePath, mode: 0o644 }, content);
+      includedEntries.push(entry);
     }
 
     // Bundle index for humans
-    const indexBuffer = Buffer.from(buildIndex(manifest.entries, pathByEntryId), "utf-8");
+    const indexBuffer = Buffer.from(buildIndex(includedEntries, pathByEntryId), "utf-8");
     pack.entry({ name: "MANIFEST.txt", mode: 0o644 }, indexBuffer);
 
     pack.finalize();
@@ -108,8 +120,7 @@ export async function GET() {
         "Content-Disposition": 'attachment; filename="config-bundle.tar.gz"',
       },
     });
-  } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    return new Response(`bundle error: ${message}`, { status: 500 });
+  } catch {
+    return new Response("Bundle generation failed", { status: 500 });
   }
 }
