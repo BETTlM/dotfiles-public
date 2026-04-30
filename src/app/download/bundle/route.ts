@@ -72,39 +72,44 @@ function buildIndex(entries: ConfigEntry[], pathByEntryId: Map<string, string>):
 }
 
 export async function GET() {
-  const manifest = await readManifest();
-  const pack = tar.pack();
-  const baseDir = getConfigsDirectory();
+  try {
+    const manifest = await readManifest();
+    const pack = tar.pack();
+    const baseDir = getConfigsDirectory();
 
-  const pathByEntryId = new Map<string, string>();
-  for (const entry of manifest.entries) {
-    pathByEntryId.set(entry.id, bundlePathForEntry(entry));
+    const pathByEntryId = new Map<string, string>();
+    for (const entry of manifest.entries) {
+      pathByEntryId.set(entry.id, bundlePathForEntry(entry));
+    }
+
+    for (const entry of manifest.entries) {
+      const absolute = path.join(baseDir, entry.storedPath);
+      const content = await fs.readFile(absolute);
+      const bundlePath = pathByEntryId.get(entry.id) ?? entry.storedPath;
+      pack.entry({ name: bundlePath, mode: 0o644 }, content);
+    }
+
+    // Bundle index for humans
+    const indexBuffer = Buffer.from(buildIndex(manifest.entries, pathByEntryId), "utf-8");
+    pack.entry({ name: "MANIFEST.txt", mode: 0o644 }, indexBuffer);
+
+    pack.finalize();
+
+    const tarChunks: Buffer[] = [];
+    for await (const chunk of pack) {
+      tarChunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
+    }
+    const tarBuffer = Buffer.concat(tarChunks);
+    const gzipBuffer = gzipSync(tarBuffer);
+
+    return new Response(gzipBuffer, {
+      headers: {
+        "Content-Type": "application/gzip",
+        "Content-Disposition": 'attachment; filename="config-bundle.tar.gz"',
+      },
+    });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return new Response(`bundle error: ${message}`, { status: 500 });
   }
-
-  for (const entry of manifest.entries) {
-    const absolute = path.join(baseDir, entry.storedPath);
-    const content = await fs.readFile(absolute);
-    const bundlePath = pathByEntryId.get(entry.id) ?? entry.storedPath;
-    pack.entry({ name: bundlePath, mode: 0o644 }, content);
-  }
-
-  // Bundle index for humans
-  const indexBuffer = Buffer.from(buildIndex(manifest.entries, pathByEntryId), "utf-8");
-  pack.entry({ name: "MANIFEST.txt", mode: 0o644 }, indexBuffer);
-
-  pack.finalize();
-
-  const tarChunks: Buffer[] = [];
-  for await (const chunk of pack) {
-    tarChunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
-  }
-  const tarBuffer = Buffer.concat(tarChunks);
-  const gzipBuffer = gzipSync(tarBuffer);
-
-  return new Response(gzipBuffer, {
-    headers: {
-      "Content-Type": "application/gzip",
-      "Content-Disposition": 'attachment; filename="config-bundle.tar.gz"',
-    },
-  });
 }
