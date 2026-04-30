@@ -82,32 +82,16 @@ export async function GET() {
     pathByEntryId.set(entry.id, bundlePathForEntry(entry));
   }
 
-  const writePromises: Promise<void>[] = [];
-
   for (const entry of manifest.entries) {
     const absolute = path.join(baseDir, entry.storedPath);
     const content = await fs.readFile(absolute);
     const bundlePath = pathByEntryId.get(entry.id) ?? entry.storedPath;
-    writePromises.push(
-      new Promise<void>((resolve, reject) => {
-        pack.entry({ name: bundlePath, mode: 0o644 }, content, (err) => {
-          if (err) reject(err);
-          else resolve();
-        });
-      }),
-    );
+    pack.entry({ name: bundlePath, mode: 0o644 }, content);
   }
-
-  await Promise.all(writePromises);
 
   // Bundle index for humans
   const indexBuffer = Buffer.from(buildIndex(manifest.entries, pathByEntryId), "utf-8");
-  await new Promise<void>((resolve, reject) => {
-    pack.entry({ name: "MANIFEST.txt", mode: 0o644 }, indexBuffer, (err) => {
-      if (err) reject(err);
-      else resolve();
-    });
-  });
+  pack.entry({ name: "MANIFEST.txt", mode: 0o644 }, indexBuffer);
 
   pack.finalize();
 

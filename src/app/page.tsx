@@ -28,7 +28,7 @@ export default async function Home() {
         </h1>
         <p className="heroSubtitle">
           Dotfiles, editor settings, and shell tweaks all live here. Grab one file or idk just download
-          the whole bundle so your fresh machine does not spawn cringe and aura-negative. I don't know why you would do this, but you can if you want.
+          the whole bundle so your fresh machine does not spawn cringe and aura-negative. I don&apos;t know why you would do this, but you can if you want.
         </p>
         <div className="heroActions">
           <Link href="/download/bundle" className="btn btnPrimary">
