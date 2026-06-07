@@ -174,6 +174,7 @@ const FILES = [
   ["~/.config/btop/btop.conf", "terminal/btop.conf", "~/.config/btop/btop.conf", "terminal", "btop", "btop system monitor preferences.", ["terminal", "monitoring"], "btop"],
   ["~/.config/fastfetch/config.jsonc", "terminal/fastfetch-config.jsonc", "~/.config/fastfetch/config.jsonc", "terminal", "Fastfetch", "Fastfetch display profile.", ["terminal", "fetch"], "Fastfetch"],
   ["~/.config/neofetch/config.conf", "terminal/neofetch.conf", "~/.config/neofetch/config.conf", "terminal", "Neofetch", "Neofetch text output configuration.", ["terminal", "fetch"], "Neofetch"],
+  ["~/Library/Application Support/com.mitchellh.ghostty/config", "terminal/ghostty-config", "~/Library/Application Support/com.mitchellh.ghostty/config", "terminal", "Ghostty", "Ghostty terminal emulator configuration.", ["terminal", "ghostty"], "Ghostty"],
 
   // Editors — Zed
   ["~/.config/zed/settings.json", "editor/zed/settings.json", "~/.config/zed/settings.json", "editor", "Zed Settings", "Zed editor settings profile.", ["editor", "zed"], "Zed"],

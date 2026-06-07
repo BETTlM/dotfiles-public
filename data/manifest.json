@@ -2396,6 +2396,24 @@
       "group": "GitHub Copilot"
     },
     {
+      "id": "terminal-ghostty-config",
+      "title": "Ghostty",
+      "description": "Ghostty terminal emulator configuration.",
+      "category": "terminal",
+      "sourcePath": "~/Library/Application Support/com.mitchellh.ghostty/config",
+      "storedPath": "terminal/ghostty-config",
+      "targetPath": "~/Library/Application Support/com.mitchellh.ghostty/config",
+      "tags": [
+        "terminal",
+        "ghostty"
+      ],
+      "checksum": "3b3c9ee3f7c23c90efd4f2bb257ce18614facd93d75593f289cc8395a315dca5",
+      "updatedAt": "2026-06-07T00:00:00.000Z",
+      "size": 1098,
+      "lines": 48,
+      "group": "Ghostty"
+    },
+    {
       "id": "editor-intellij-codestyles-default-xml",
       "title": "intellij/codestyles · Default.xml",
       "description": "Imported from ~/Library/Application Support/JetBrains/IntelliJIdea2025.1/codestyles.",
