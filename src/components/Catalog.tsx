@@ -57,19 +57,127 @@ function formatSize(bytes: number) {
   return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
 }
 
-function ArrowDownTrayIcon() {
+/* ============ SVG icon set ============ */
+
+const ICON_PROPS = {
+  width: 18,
+  height: 18,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1.6,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  "aria-hidden": true,
+} as const;
+
+function ShellIcon() {
   return (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
+    <svg {...ICON_PROPS}>
+      <polyline points="4 17 10 11 4 5" />
+      <line x1="12" y1="19" x2="20" y2="19" />
+    </svg>
+  );
+}
+
+function EditorIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <polyline points="16 18 22 12 16 6" />
+      <polyline points="8 6 2 12 8 18" />
+    </svg>
+  );
+}
+
+function TerminalIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <polyline points="6 9 9 12 6 15" />
+      <line x1="12" y1="15" x2="17" y2="15" />
+    </svg>
+  );
+}
+
+function UiIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <line x1="3" y1="9" x2="21" y2="9" />
+      <line x1="9" y1="21" x2="9" y2="9" />
+    </svg>
+  );
+}
+
+function NetworkIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <circle cx="12" cy="12" r="10" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    </svg>
+  );
+}
+
+function GitIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <circle cx="6" cy="6" r="2.5" />
+      <circle cx="18" cy="18" r="2.5" />
+      <circle cx="6" cy="18" r="2.5" />
+      <path d="M6 8.5v7" />
+      <path d="M18 15.5V12a4 4 0 0 0-4-4h-3" />
+    </svg>
+  );
+}
+
+function NotesIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+      <polyline points="14 2 14 8 20 8" />
+      <line x1="8" y1="13" x2="16" y2="13" />
+      <line x1="8" y1="17" x2="13" y2="17" />
+    </svg>
+  );
+}
+
+function FileIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+      <polyline points="14 2 14 8 20 8" />
+    </svg>
+  );
+}
+
+const CATEGORY_ICONS: Record<string, () => React.JSX.Element> = {
+  shell: ShellIcon,
+  editor: EditorIcon,
+  terminal: TerminalIcon,
+  ui: UiIcon,
+  network: NetworkIcon,
+  git: GitIcon,
+  notes: NotesIcon,
+};
+
+function CategoryIcon({ category }: { category: string }) {
+  const Icon = CATEGORY_ICONS[category] ?? FileIcon;
+  return <Icon />;
+}
+
+function EyeIcon() {
+  return (
+    <svg {...ICON_PROPS} width={13} height={13}>
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
+function DownloadIcon() {
+  return (
+    <svg {...ICON_PROPS} width={13} height={13}>
       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
       <polyline points="7 10 12 15 17 10" />
       <line x1="12" y1="15" x2="12" y2="3" />
@@ -77,43 +185,25 @@ function ArrowDownTrayIcon() {
   );
 }
 
-function EyeIcon() {
+function StarIcon() {
   return (
     <svg
-      width="14"
-      height="14"
+      width="11"
+      height="11"
       viewBox="0 0 24 24"
-      fill="none"
+      fill="currentColor"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-      <circle cx="12" cy="12" r="3" />
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
     </svg>
   );
 }
 
-function SearchIcon() {
-  return (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <circle cx="11" cy="11" r="8" />
-      <line x1="21" y1="21" x2="16.65" y2="16.65" />
-    </svg>
-  );
-}
+/* ============ Catalog ============ */
 
 type ModLevel = "heavy" | "moderate" | "light" | "vanilla";
 
@@ -141,38 +231,42 @@ const MOD_LEVEL_LABEL: Record<ModLevel, string> = {
   vanilla: "NPC default",
 };
 
-function StarIcon() {
-  return (
-    <svg
-      width="12"
-      height="12"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-    </svg>
-  );
+function trackPointer(event: React.MouseEvent<HTMLElement>) {
+  const el = event.currentTarget;
+  const rect = el.getBoundingClientRect();
+  el.style.setProperty("--mx", `${event.clientX - rect.left}px`);
+  el.style.setProperty("--my", `${event.clientY - rect.top}px`);
 }
 
-function EntryCard({ entry, featured = false }: { entry: CatalogEntry; featured?: boolean }) {
+function EntryTile({
+  entry,
+  order,
+  featured = false,
+}: {
+  entry: CatalogEntry;
+  order: number;
+  featured?: boolean;
+}) {
   return (
-    <article className={`card${featured ? " card--featured" : ""}`}>
-      <div className="cardTop">
-        <span className="cardIcon">{fileExtension(entry.storedPath)}</span>
-        <div className="cardTopBadges">
+    <article
+      className={`tile${featured ? " tile--featured" : ""}`}
+      onMouseMove={trackPointer}
+      style={{ "--d": `${Math.min(order, 11) * 45}ms` } as React.CSSProperties}
+    >
+      <div className="tileHead">
+        <span className="tileIcon">
+          <CategoryIcon category={entry.category} />
+        </span>
+        <span className="tileExt">{fileExtension(entry.storedPath)}</span>
+        <div className="tileHeadRight">
           {entry.priorityScore >= ESSENTIAL_THRESHOLD ? (
-            <span className="essentialBadge" title={`Priority ${entry.priorityScore}`}>
+            <span className="tileStar" title={`Priority ${entry.priorityScore}`}>
               <StarIcon />
               Main quest
             </span>
           ) : null}
           <span
-            className={`modBadge mod-${entry.modLevel}`}
+            className={`modMark mod-${entry.modLevel}`}
             title={`${entry.lines} lines · ${formatSize(entry.size)}`}
           >
             <span className="modDot" />
@@ -180,10 +274,12 @@ function EntryCard({ entry, featured = false }: { entry: CatalogEntry; featured?
           </span>
         </div>
       </div>
-      <h3 className="cardTitle">{entry.title}</h3>
-      <p className="cardDesc">{entry.description}</p>
+      <Link href={`/config/${entry.id}`} className="tileTitle">
+        {entry.title}
+      </Link>
+      <p className="tileDesc">{entry.description}</p>
       {entry.tags.length > 0 ? (
-        <div className="tagRow">
+        <div className="tileTags">
           {entry.tags.slice(0, 4).map((tag) => (
             <span key={tag} className="tag">
               #{tag}
@@ -191,27 +287,25 @@ function EntryCard({ entry, featured = false }: { entry: CatalogEntry; featured?
           ))}
         </div>
       ) : null}
-      <div className="cardMeta">
-        <code title={entry.targetPath}>{entry.targetPath}</code>
-      </div>
-      <div className="cardMetaRow">
-        <span className="metaPill">{formatSize(entry.size)}</span>
-        <span className="metaPill">{entry.lines} lines</span>
-        {entry.group ? (
-          <span className="metaPill">{entry.group}</span>
-        ) : (
-          <span className="metaPill subtle">{entry.category}</span>
-        )}
-      </div>
-      <div className="cardActions">
-        <Link href={`/config/${entry.id}`} className="cardBtn">
-          <EyeIcon />
-          Peek
-        </Link>
-        <Link href={`/download/${entry.id}`} className="cardBtn primary">
-          <ArrowDownTrayIcon />
-          Yoink
-        </Link>
+      <code className="tilePath" title={entry.targetPath}>
+        {entry.targetPath}
+      </code>
+      <div className="tileFoot">
+        <div className="tileMeta">
+          <span>{formatSize(entry.size)}</span>
+          <span>{entry.lines} ln</span>
+          <span className="dim">{entry.group ?? entry.category}</span>
+        </div>
+        <div className="tileActions">
+          <Link href={`/config/${entry.id}`} className="tileAction">
+            <EyeIcon />
+            peek
+          </Link>
+          <Link href={`/download/${entry.id}`} className="tileAction primary">
+            <DownloadIcon />
+            yoink
+          </Link>
+        </div>
       </div>
     </article>
   );
@@ -365,12 +459,14 @@ export function Catalog({ entries }: CatalogProps) {
     <>
       <div className="toolbar">
         <div className="searchWrap">
-          <SearchIcon />
+          <span className="searchPrompt" aria-hidden="true">
+            &gt;
+          </span>
           <input
             type="text"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search by name, tag, or path"
+            placeholder="search by name, tag, or path"
             className="searchInput"
             spellCheck={false}
           />
@@ -390,9 +486,9 @@ export function Catalog({ entries }: CatalogProps) {
         </div>
       </div>
 
-      <p className="muted" style={{ marginBottom: "1.25rem", fontSize: "0.82rem" }}>
-        Top row is the no-cap critical stuff. Everything else is sorted by priority and how hard
-        each config is customized.
+      <p className="muted" style={{ marginBottom: "2rem", fontSize: "0.76rem" }}>
+        // Top row is the no-cap critical stuff. Everything else is sorted by priority and how
+        hard each config is customized.
       </p>
 
       {grouped.length === 0 ? (
@@ -417,9 +513,9 @@ export function Catalog({ entries }: CatalogProps) {
                   Start here on a fresh machine and future-you avoids instant tilt.
                 </p>
               </header>
-              <div className="cardGrid">
-                {essentials.map((entry) => (
-                  <EntryCard key={`essential-${entry.id}`} entry={entry} featured />
+              <div className="tileGrid">
+                {essentials.map((entry, i) => (
+                  <EntryTile key={`essential-${entry.id}`} entry={entry} order={i} featured />
                 ))}
               </div>
             </section>
@@ -437,41 +533,42 @@ export function Catalog({ entries }: CatalogProps) {
                   </div>
                 </header>
 
-                {section.subGroups.map((sub, idx) => (
-                  <div key={`${section.category}-${sub.label ?? "none"}-${idx}`} className="subSection">
-                    {(() => {
-                      const groupKey = `${section.category}:${sub.label ?? "other"}:${idx}`;
-                      const isCollapsed = collapsedGroups[groupKey] ?? false;
-                      return (
-                        <>
-                    {showSubLabels ? (
-                      <header className="subSectionHeader">
-                        <button
-                          type="button"
-                          className="subSectionToggle"
-                          onClick={() => toggleGroup(groupKey)}
-                          aria-expanded={!isCollapsed}
-                        >
-                          <span className={`subSectionChevron${isCollapsed ? " collapsed" : ""}`}>
-                            ▾
-                          </span>
-                        <h3 className="subSectionTitle">{sub.label ?? "Other stuff"}</h3>
-                          <span className="subSectionCount">{sub.items.length} files</span>
-                        </button>
-                      </header>
-                    ) : null}
-                    {!isCollapsed ? (
-                      <div className="cardGrid">
-                        {sub.items.map((entry) => (
-                          <EntryCard key={entry.id} entry={entry} />
-                        ))}
+                {section.subGroups.map((sub, idx) => {
+                  const groupKey = `${section.category}:${sub.label ?? "other"}:${idx}`;
+                  const isCollapsed = collapsedGroups[groupKey] ?? false;
+                  return (
+                    <div
+                      key={`${section.category}-${sub.label ?? "none"}-${idx}`}
+                      className="subSection"
+                    >
+                      {showSubLabels ? (
+                        <header className="subSectionHeader">
+                          <button
+                            type="button"
+                            className="subSectionToggle"
+                            onClick={() => toggleGroup(groupKey)}
+                            aria-expanded={!isCollapsed}
+                          >
+                            <span className="subSectionChevron">
+                              {isCollapsed ? "[+]" : "[-]"}
+                            </span>
+                            <h3 className="subSectionTitle">{sub.label ?? "Other stuff"}</h3>
+                            <span className="subSectionCount">{sub.items.length} files</span>
+                          </button>
+                        </header>
+                      ) : null}
+                      <div className={`collapseWrap${isCollapsed ? " collapsed" : ""}`}>
+                        <div>
+                          <div className="tileGrid">
+                            {sub.items.map((entry, i) => (
+                              <EntryTile key={entry.id} entry={entry} order={i} />
+                            ))}
+                          </div>
+                        </div>
                       </div>
-                    ) : null}
-                        </>
-                      );
-                    })()}
-                  </div>
-                ))}
+                    </div>
+                  );
+                })}
               </section>
             );
           })}

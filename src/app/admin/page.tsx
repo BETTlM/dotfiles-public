@@ -89,13 +89,13 @@ export default async function AdminPage() {
   const manifest = await readManifest();
   return (
     <main className="container">
-      <section className="hero" style={{ padding: "2.25rem 2rem" }}>
-        <span className="heroBadge">
+      <section className="hero hero--compact">
+        <p className="heroAnnotation">
           <span className="dot" />
-          Authenticated as @{session?.user?.name ?? ADMIN_GITHUB_LOGIN}
-        </span>
+          authenticated as @{session?.user?.name ?? ADMIN_GITHUB_LOGIN}
+        </p>
         <h1 className="heroTitle" style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)" }}>
-          Admin <span className="gradient">war room</span>
+          Admin <span className="heroAccent">war room</span>
         </h1>
         <p className="heroSubtitle">
           Add, update, or delete config entries. Inputs are sanitized and placeholder-normalized

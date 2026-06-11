@@ -19,12 +19,13 @@ export default async function Home() {
   return (
     <main className="container">
       <section className="hero">
-        <span className="heroBadge">
+        <p className="heroAnnotation">
           <span className="dot" />
-          Live build, sanitized, aura maxed
-        </span>
+          live build, sanitized, aura maxed
+        </p>
         <h1 className="heroTitle">
-          My <span className="gradient">config stash</span> is lowkirkenuinely locked in and absolutely goated.
+          My <span className="heroAccent">config stash</span> is lowkirkenuinely locked in and absolutely goated.
+          <span className="heroCaret" aria-hidden="true" />
         </h1>
         <p className="heroSubtitle">
           Dotfiles, editor settings, and shell tweaks all live here. Grab one file or idk just download

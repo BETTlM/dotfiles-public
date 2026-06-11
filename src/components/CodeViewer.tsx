@@ -14,15 +14,66 @@ const customCodeStyle: React.CSSProperties = {
   background: "transparent",
   margin: 0,
   padding: "1.25rem",
-  fontSize: "0.86rem",
-  lineHeight: 1.55,
+  fontSize: "0.84rem",
+  lineHeight: 1.6,
 };
+
+// Warm-toned token overrides so the highlighting sits on the charcoal palette
+// instead of oneDark's cool blues.
+const TOKEN_OVERRIDES: Record<string, React.CSSProperties> = {
+  comment: { color: "#6e675a", fontStyle: "italic" },
+  prolog: { color: "#6e675a" },
+  doctype: { color: "#6e675a" },
+  cdata: { color: "#6e675a" },
+  punctuation: { color: "#8a8374" },
+  property: { color: "#e8a14e" },
+  tag: { color: "#cf6f5f" },
+  boolean: { color: "#d98e6a" },
+  number: { color: "#d98e6a" },
+  constant: { color: "#d98e6a" },
+  symbol: { color: "#d98e6a" },
+  selector: { color: "#a3b97e" },
+  "attr-name": { color: "#e6c98a" },
+  string: { color: "#a3b97e" },
+  char: { color: "#a3b97e" },
+  builtin: { color: "#e6c98a" },
+  inserted: { color: "#a3b97e" },
+  operator: { color: "#b6ae9d" },
+  entity: { color: "#e6c98a" },
+  url: { color: "#a3b97e" },
+  variable: { color: "#ebe4d5" },
+  atrule: { color: "#e8a14e" },
+  "attr-value": { color: "#a3b97e" },
+  function: { color: "#e6c98a" },
+  "class-name": { color: "#e6c98a" },
+  keyword: { color: "#e8a14e" },
+  regex: { color: "#d98e6a" },
+  important: { color: "#cf6f5f", fontWeight: "bold" },
+  deleted: { color: "#cf6f5f" },
+};
+
+const archiveTheme: Record<string, React.CSSProperties> = {
+  ...oneDark,
+  'pre[class*="language-"]': {
+    ...oneDark['pre[class*="language-"]'],
+    background: "transparent",
+  },
+  'code[class*="language-"]': {
+    ...oneDark['code[class*="language-"]'],
+    background: "transparent",
+    color: "#ebe4d5",
+  },
+};
+
+for (const [token, style] of Object.entries(TOKEN_OVERRIDES)) {
+  archiveTheme[token] = { ...(oneDark[token] as React.CSSProperties | undefined), ...style };
+}
 
 function CopyIcon() {
   return (
     <svg
-      width="13"
-      height="13"
+      width="12"
+      height="12"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -40,8 +91,8 @@ function CopyIcon() {
 function CheckIcon() {
   return (
     <svg
-      width="13"
-      height="13"
+      width="12"
+      height="12"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -71,13 +122,9 @@ export function CodeViewer({ code, language, filename }: CodeViewerProps) {
   return (
     <div className="codePanel">
       <div className="codePanelHeader">
-        <div style={{ display: "flex", alignItems: "center", gap: "0.85rem", minWidth: 0 }}>
-          <span className="codePanelDots" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
+        <div className="codePanelInfo">
           {filename ? <span className="codePanelFile">{filename}</span> : null}
+          <span className="codePanelLang">{language}</span>
         </div>
         <button
           type="button"
@@ -86,12 +133,12 @@ export function CodeViewer({ code, language, filename }: CodeViewerProps) {
           aria-label="Copy rune"
         >
           {copied ? <CheckIcon /> : <CopyIcon />}
-          {copied ? "Copied" : "Copy rune"}
+          {copied ? "copied" : "copy rune"}
         </button>
       </div>
       <SyntaxHighlighter
         language={language}
-        style={oneDark}
+        style={archiveTheme}
         customStyle={customCodeStyle}
         showLineNumbers={false}
       >

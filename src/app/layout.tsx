@@ -30,8 +30,8 @@ export default function RootLayout({
       <body id="top">
         <header className="topNav">
           <Link href="/" className="brand">
-            <span className="brandMark">cf</span>
-            <span className="brandText">Config Portal</span>
+            <span className="brandMark">~/</span>
+            <span className="brandText">configs</span>
           </Link>
           <nav>
             <Link href="/#top" className="navLink">
