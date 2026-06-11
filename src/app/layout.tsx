@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
+import { Footer } from "@/components/Footer";
+import { SITE } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE.canonicalUrl),
   title: "Config Portal | Chaos Dotfiles",
   description:
     "A public stash of sanitized setup files. Pull one config or the full bundle and stay locked in.",
@@ -54,23 +57,7 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
-        <footer className="footer">
-          <div className="footerInner">
-            <span>
-              Crafted by{" "}
-              <Link
-                href="https://github.com/BETTlM"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                @BETTlM
-              </Link>
-            </span>
-            <span>
-              Sanitized for public viewing, placeholders normalized, read-only for everyone else
-            </span>
-          </div>
-        </footer>
+        <Footer />
         <Analytics />
       </body>
     </html>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import type { ConfigEntry } from "@/lib/types";
 
@@ -216,6 +216,7 @@ interface CatalogEntry extends ConfigEntry {
 
 const ESSENTIAL_THRESHOLD = 70;
 const ESSENTIAL_MAX_DISPLAY = 12;
+const PREVIEW_TILE_COUNT = 5;
 
 function classifyModLevel(size: number, lines: number): ModLevel {
   if (size >= 10_000 || lines >= 250) return "heavy";
@@ -311,10 +312,116 @@ function EntryTile({
   );
 }
 
+function ExpandIcon() {
+  return (
+    <svg {...ICON_PROPS} width={22} height={22}>
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <line x1="5" y1="12" x2="19" y2="12" />
+    </svg>
+  );
+}
+
+function CollapseIcon() {
+  return (
+    <svg {...ICON_PROPS} width={22} height={22}>
+      <line x1="5" y1="12" x2="19" y2="12" />
+    </svg>
+  );
+}
+
+function ExpandTile({
+  hiddenCount,
+  total,
+  onClick,
+  order,
+}: {
+  hiddenCount: number;
+  total: number;
+  onClick: () => void;
+  order: number;
+}) {
+  return (
+    <button
+      type="button"
+      className="tile tileExpand"
+      onClick={onClick}
+      onMouseMove={trackPointer}
+      aria-expanded={false}
+      aria-label={`Show all ${total} configs in this section`}
+      style={{ "--d": `${Math.min(order, 11) * 45}ms` } as React.CSSProperties}
+    >
+      <span className="tileExpandIcon">
+        <ExpandIcon />
+      </span>
+      <span className="tileExpandCount">+{hiddenCount}</span>
+      <span className="tileExpandLabel">more configs locked in here</span>
+      <span className="tileExpandAction">show all {total}</span>
+    </button>
+  );
+}
+
+function CollapseTile({ onClick, order }: { onClick: () => void; order: number }) {
+  return (
+    <button
+      type="button"
+      className="tile tileExpand tileExpand--collapse"
+      onClick={onClick}
+      onMouseMove={trackPointer}
+      aria-expanded={true}
+      aria-label="Show fewer configs"
+      style={{ "--d": `${Math.min(order, 11) * 45}ms` } as React.CSSProperties}
+    >
+      <span className="tileExpandIcon">
+        <CollapseIcon />
+      </span>
+      <span className="tileExpandLabel">full stash unlocked</span>
+      <span className="tileExpandAction">show less</span>
+    </button>
+  );
+}
+
+function TileGrid({
+  items,
+  gridKey,
+  expanded,
+  onToggleExpand,
+  featured = false,
+}: {
+  items: CatalogEntry[];
+  gridKey: string;
+  expanded: boolean;
+  onToggleExpand: (key: string) => void;
+  featured?: boolean;
+}) {
+  const hasOverflow = items.length > PREVIEW_TILE_COUNT;
+  const visible = expanded || !hasOverflow ? items : items.slice(0, PREVIEW_TILE_COUNT);
+  const hiddenCount = items.length - PREVIEW_TILE_COUNT;
+
+  return (
+    <div className="tileGrid" data-grid={gridKey}>
+      {visible.map((entry, i) => (
+        <EntryTile key={entry.id} entry={entry} order={i} featured={featured} />
+      ))}
+      {hasOverflow && !expanded ? (
+        <ExpandTile
+          hiddenCount={hiddenCount}
+          total={items.length}
+          onClick={() => onToggleExpand(gridKey)}
+          order={PREVIEW_TILE_COUNT}
+        />
+      ) : null}
+      {hasOverflow && expanded ? (
+        <CollapseTile onClick={() => onToggleExpand(gridKey)} order={visible.length} />
+      ) : null}
+    </div>
+  );
+}
+
 export function Catalog({ entries }: CatalogProps) {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string>(ALL_FILTER);
   const [collapsedGroups, setCollapsedGroups] = useState<Record<string, boolean>>({});
+  const [expandedGrids, setExpandedGrids] = useState<Record<string, boolean>>({});
 
   const enriched: CatalogEntry[] = useMemo(
     () =>
@@ -455,6 +562,19 @@ export function Catalog({ entries }: CatalogProps) {
     }));
   };
 
+  const toggleGridExpand = (gridKey: string) => {
+    setExpandedGrids((prev) => ({
+      ...prev,
+      [gridKey]: !prev[gridKey],
+    }));
+  };
+
+  const filterKey = `${activeCategory}:${query.trim().toLowerCase()}`;
+
+  useEffect(() => {
+    setExpandedGrids({});
+  }, [filterKey]);
+
   return (
     <>
       <div className="toolbar">
@@ -513,11 +633,13 @@ export function Catalog({ entries }: CatalogProps) {
                   Start here on a fresh machine and future-you avoids instant tilt.
                 </p>
               </header>
-              <div className="tileGrid">
-                {essentials.map((entry, i) => (
-                  <EntryTile key={`essential-${entry.id}`} entry={entry} order={i} featured />
-                ))}
-              </div>
+              <TileGrid
+                items={essentials}
+                gridKey="essentials:main"
+                expanded={expandedGrids["essentials:main"] ?? false}
+                onToggleExpand={toggleGridExpand}
+                featured
+              />
             </section>
           ) : null}
 
@@ -559,11 +681,12 @@ export function Catalog({ entries }: CatalogProps) {
                       ) : null}
                       <div className={`collapseWrap${isCollapsed ? " collapsed" : ""}`}>
                         <div>
-                          <div className="tileGrid">
-                            {sub.items.map((entry, i) => (
-                              <EntryTile key={entry.id} entry={entry} order={i} />
-                            ))}
-                          </div>
+                          <TileGrid
+                            items={sub.items}
+                            gridKey={groupKey}
+                            expanded={expandedGrids[groupKey] ?? false}
+                            onToggleExpand={toggleGridExpand}
+                          />
                         </div>
                       </div>
                     </div>
